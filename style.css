@@ -1,0 +1,137 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body, button, input, input::placeholder, textarea{
+    font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal
+}
+
+.navbar {
+    background-color: #334fff;
+    padding: 10px;
+}
+
+.container {
+    padding: 10px;
+}
+
+.book-container{
+    padding: 10px;
+    width: 25%;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    border-radius: 10px;
+    margin: 30px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.book-container h2 {
+    color: #334fff ;
+
+}
+
+.book-container button{
+    background-color: #334fff;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+    margin-top: 5px;
+}
+
+.add-button {
+    border-radius: 100%;
+    background-color: #334fff;
+    text-align: right;
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    
+}
+.popup-overlay, .edit-overlay{
+    opacity: 0.8;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    z-index: 1;
+    display:none;
+}
+.popup-box, .edit-popup{
+    background-color: #334fff ;
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 2;
+    display:none;
+
+}
+.popup-box input, #book-disc-input, #edit-input, #edit-disc-input , #edit-author-input{
+    background: transparent;
+    border: none;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border-bottom: solid black 2px;
+    
+}
+#book-disc-input, #edit-disc-input{
+    background: transparent;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border-bottom: solid black 2px;
+}
+#add-book, #cancel-popup, #edit-con{
+    border: none;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10%;
+}
+.popup-box input::placeholder, .edit-popup input::placeholder{
+    color: black;
+}
+.popup-box textarea::placeholder, .edit-popup textarea::placeholder{
+    color: black;
+}
+.popup-box input:focus, .popup-box textarea:focus, .edit-popup input::placeholder, edit-popup textarea::placeholder{
+    outline:none;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+h1:hover{
+    color: white;
+
+}
+
+textarea{
+    display: inline;
+    width: 250px; height: 250px;
+}
